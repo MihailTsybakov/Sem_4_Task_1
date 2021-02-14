@@ -1,0 +1,5 @@
+1 Output_1.txt 3 false 223
+0 Output_2.txt 4 true 7582
+0 Output_3.txt 2 false 47
+1 Output_4.txt 3 true 576
+0 Output_5.txt 4 false 1432
