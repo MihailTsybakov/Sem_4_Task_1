@@ -135,7 +135,10 @@ string CIntN::pure_plus(const CIntN& num_1, const CIntN& num_2)
         {
             if (i == 0)
             {
-                res_digits[i] = 9;
+                for (int j = 0; j < num_1.dimension; ++j)
+                {
+                    res_digits[i] = 9;
+                }
             }
             else
             {
