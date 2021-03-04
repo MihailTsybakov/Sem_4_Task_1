@@ -17,12 +17,12 @@ protected:
     bool sign; // True = "+"
     int* digits; // Digits array
     string output_file;
+    string pure_plus(const CIntN& num_1, const CIntN& num_2) const;
+    string pure_minus(const CIntN& num_1, const CIntN& num_2) const;
 public:
     CIntN();
     virtual ~CIntN();
     CIntN(int dimension, bool sign, string digits_string, string output_file);
-    string pure_plus(const CIntN& num_1, const CIntN& num_2) const;
-    string pure_minus(const CIntN& num_1, const CIntN& num_2) const;
     CIntN(const CIntN& to_copy);
     CIntN& operator=(const CIntN& equals_to);
     void print() const noexcept;
