@@ -27,6 +27,7 @@ int main(int argc, char* argv[])
     {
         psvector.push_back(tmp_string);
     }
+    input_file.close();
 
     CIntN** arr = new CIntN*[psvector.size()];
     CIntN_Factory factory;
@@ -43,7 +44,12 @@ int main(int argc, char* argv[])
         delete arr[i];
     }
 
-    input_file.close();
+    CIntN0 a(3, true, "324", "-");
+    CIntN1 b(3, false, "111", "-");
+    cout << "Frankenstein assembled from CIntN0 and CIntN1: ";
+    CIntN1 c = a+b;
+    c.print();
+
     delete[] arr;
     return 0;
 }
